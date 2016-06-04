@@ -44,7 +44,7 @@ public class SecureServer {
      */
     public static void main(String[] args) throws KeyStoreException, NoSuchAlgorithmException, UnrecoverableKeyException, KeyManagementException, IOException, CertificateException {
         KeyStore keyStore = KeyStore.getInstance("JKS");
-        keyStore.load(new FileInputStream("c:\\users\\mir saman tajbakhsh\\desktop\\test2.jks"), "123".toCharArray());
+        keyStore.load(new FileInputStream("test.jks"), "123".toCharArray());
 
         SSLServerSocketFactory sslFactory = null;
 
